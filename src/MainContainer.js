@@ -1,5 +1,5 @@
 import React from 'react'
-import { TouchableOpacity } from 'react-native'
+import { TouchableHighlight } from 'react-native'
 
 // for navigation
 import { NavigationContainer } from '@react-navigation/native'
@@ -28,7 +28,7 @@ export default function MainContainer() {
             tabBarLabelStyle: { paddingBottom: 6, fontSize: 9, color: 'grey' },
             tabBarIconStyle: { marginTop: 6, },
             tabBarStyle: { height: 52 },
-            tabBarButton: (props) => <TouchableOpacity {...props}  />,
+            tabBarButton: (props) => <TouchableHighlight underlayColor={'#EEEEEE'} {...props}  />,
             tabBarIcon: ({ focused, color, size }) => {
                 let iconName
                 let rn = route.name
