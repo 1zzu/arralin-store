@@ -25,9 +25,9 @@ export default function MainContainer() {
         <Tab.Navigator
         initialRouteName={homeName}
         screenOptions={({ route }) => ({
-            tabBarLabelStyle: { paddingBottom: 6, fontSize: 9, color: 'grey' },
+            tabBarLabelStyle: { paddingBottom: 6, fontSize: 11, color: 'grey' },
             tabBarIconStyle: { marginTop: 6, },
-            tabBarStyle: { height: 52 },
+            tabBarStyle: { height: 60 },
             tabBarButton: (props) => <TouchableHighlight underlayColor={'#EEEEEE'} {...props}  />,
             tabBarIcon: ({ focused, color, size }) => {
                 let iconName
@@ -36,19 +36,19 @@ export default function MainContainer() {
                 if ( rn == homeName) {
                     iconName = focused ? 'book' : 'book-outline'
                     color = focused ? '#03346E' : '#758694'
-                    size = focused ? 26 : 22
+                    size = focused ? 28 : 24
                 } else if ( rn == transactionName) {
                     iconName = focused ? 'receipt' : 'receipt-outline'
                     color = focused ? '#03346E' : '#758694'
-                    size = focused ? 26 : 22
+                    size = focused ? 28 : 24
                 } else if ( rn == wishListName) {
                     iconName = focused ? 'heart' : 'heart-outline'
                     color = focused ? '#DC2855' : '#758694'
-                    size = focused ? 26 : 22
+                    size = focused ? 28 : 24
                 } else if ( rn == profileName ) {
                     iconName = focused ? 'person' : 'person-outline'
                     color = focused ? '#03346E' : '#758694'
-                    size = focused ? 26 : 22
+                    size = focused ? 28 : 24
                 }
 
                 return <Ionicons name={iconName} color={color} size={size} />
