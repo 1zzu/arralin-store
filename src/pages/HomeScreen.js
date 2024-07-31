@@ -7,6 +7,7 @@ import CarouselAds from '../components/Home/CarouselAds'
 import HeaderSearch from '../components/Home/HeaderSearch'
 import CategoryList from '../components/Home/CategoryList'
 import BannerDisc from '../components/Home/BannerDisc'
+import BottomCategory from '../components/Category/BottomCategory'
 
 
 export default function HomeScreen() {
@@ -31,7 +32,7 @@ export default function HomeScreen() {
                 }>
                     <CarouselAds />
                     <CategoryList />
-                    <BannerDisc />
+                    {/* <BannerDisc /> */}
             </ScrollView>
         </SafeAreaView>
     )

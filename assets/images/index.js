@@ -5,6 +5,7 @@ import Header2 from './header-2.jpeg'
 import Ads1 from './ads1.png'
 import Ads2 from './ads2.png'
 import Ads3 from './ads3.png'
+import Product1 from './product1.png'
 
 export {
     Iklan1,
@@ -14,4 +15,5 @@ export {
     Ads1,
     Ads2,
     Ads3,
+    Product1
 }
