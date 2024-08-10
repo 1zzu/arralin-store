@@ -15,6 +15,8 @@ const red = '#ED2739'
 
 const purple = '#87027B'
 
+const yellow = '#FFC300'
+
 export {
     green,
     green1,
@@ -27,5 +29,6 @@ export {
     blue2,
     blue3,
     red,
-    purple
+    purple,
+    yellow
 }

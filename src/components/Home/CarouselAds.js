@@ -1,13 +1,13 @@
 import React, { useRef, useEffect } from 'react';
 import { FlatList, Image, useWindowDimensions, View } from 'react-native';
 
-import { Ads1, Ads2, Ads3 } from '../../../assets/images/index'
+import { Ads2, Ads3, Poster1 } from '../../../assets/images/index'
 
 export default function CarouselAds() {
   const widthScreen = useWindowDimensions().width;
   const flatListRef = useRef(null);
   const carouselData = [
-    { id: "1", img: Ads1 },
+    { id: "1", img: Poster1 },
     { id: "2", img: Ads2 },
     { id: "3", img: Ads3 },
   ];
